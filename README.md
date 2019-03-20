@@ -1,2 +1,7 @@
-# todo-app-react-redux
-A ToDo application developed using React and Redux.
+# Spotify Player
+
+A Spotify player clone using Spotify API.
+
+- ReactJS
+- Redux / Saga
+- Spotify API
