@@ -4,8 +4,9 @@ import { GlobalStyle } from "./styles/global";
 
 import Sidebar from "./components/Sidebar";
 import Player from "./components/Player";
+import Header from "./components/Header";
 
-import { Wrapper, Container } from "./styles/components";
+import { Wrapper, Container, Content } from "./styles/components";
 
 class App extends Component {
     render() {
@@ -14,6 +15,9 @@ class App extends Component {
                 <GlobalStyle />
                 <Container>
                     <Sidebar />
+                    <Content>
+                        <Header />
+                    </Content>
                 </Container>
                 <Player />
             </Wrapper>
