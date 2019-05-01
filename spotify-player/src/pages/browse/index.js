@@ -7,7 +7,7 @@ const Browse = () => (
         <Title>Home</Title>
 
         <List>
-            <Playlist href="">
+            <Playlist to="/playlists/1">
                 <img
                     src="https://pt.wikipedia.org/wiki/Concrete_and_Gold#/media/File:Foo_Fighters_-_Concrete_and_Gold_-_2017.jpg"
                     alt="Playlist"
