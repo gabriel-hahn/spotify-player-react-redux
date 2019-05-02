@@ -17,7 +17,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-[Gabriel Hahn Schaeffer](https://github.com/gabriel-hahn/)
+[Gabriel Hahn Schaeffer](https://github.com/gabriel-hahn/) | [Rocketseat Course](https://github.com/Rocketseat)
 
 See also the list of [contributors](https://github.com/gabriel-hahn/spotify-player-react-redux/contributors) who participated in this project.
 
