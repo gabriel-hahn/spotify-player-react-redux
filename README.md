@@ -1,11 +1,11 @@
 # Spotify Player
 
-A Spotify player clone using Spotify API - ReactJS and React Native
+A Spotify player clone using JSON Server to simule Spotify API - ReactJS and React Native
 
 - ReactJS
 - React Native
 - Redux / Saga
-- Spotify API
+- JSON Server
 
 ## Contributing
 
