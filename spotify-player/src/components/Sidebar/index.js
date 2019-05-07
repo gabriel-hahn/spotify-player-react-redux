@@ -33,7 +33,7 @@ class Sidebar extends Component {
                 <div>
                     <Nav main>
                         <li>
-                            <a href="">Browse</a>
+                            <Link to="/">Browse</Link>
                         </li>
                         <li>
                             <a href="">Radio</a>
