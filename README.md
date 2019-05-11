@@ -1,6 +1,6 @@
 # Spotify Player
 
-A Spotify player clone using JSON Server to simule Spotify API - ReactJS and React Native.
+A Spotify player clone using JSON Server to simulate Spotify API - ReactJS and React Native.
 This project allow you to play some songs, pause and change song's progress and volume.
 
 - ReactJS
@@ -32,7 +32,9 @@ $ yarn start
 
 ## Layout Demo
 
-
+<p align="center">
+    <img src="https://media.giphy.com/media/LMoJcA5vhUMXamMKMq/giphy.gif">
+</p>
 
 ## Contributing
 
