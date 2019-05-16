@@ -30,6 +30,14 @@ The follow command will opens the project in your favorite browse. I recommend y
 $ yarn start
 ```
 
+## Tests
+
+Inside each project, run the follow command to execute all tests:
+
+```sh
+$ yarn test
+```
+
 ## Layout Demo
 
 <p align="center">
