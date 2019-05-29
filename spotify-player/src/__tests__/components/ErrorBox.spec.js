@@ -24,7 +24,7 @@ beforeEach(() => {
 });
 
 describe('ErrorBox Component', () => {
-  describe('Shadow tests', () => {
+  describe('Smoke tests', () => {
     it('Should render the error box component', () => {
       expect(wrapper.exists());
     });

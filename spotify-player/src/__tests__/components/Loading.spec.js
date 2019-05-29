@@ -6,7 +6,7 @@ import LoadingIcon from '../../assets/images/loading.svg';
 import Loading from '../../components/Loading';
 
 describe('Loading Component', () => {
-  describe('Shadow tests', () => {
+  describe('Smoke tests', () => {
     it('Should render the img element', () => {
       const wrapper = mount(<Loading />);
       expect(wrapper.find('img').exists()).toBe(true);

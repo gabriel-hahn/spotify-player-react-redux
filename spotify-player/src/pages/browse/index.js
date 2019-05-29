@@ -35,10 +35,9 @@ class Browse extends Component {
     return (
       <Container>
         <Title>
-Home
+          Home
           {this.props.playlists.loading && <Loading />}
           {' '}
-
         </Title>
 
         <List>

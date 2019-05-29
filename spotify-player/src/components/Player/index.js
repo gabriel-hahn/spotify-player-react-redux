@@ -136,7 +136,7 @@ Player.propTypes = {
   progress: PropsTypes.number.isRequired,
 };
 
-function msToTime(duration) {
+export function msToTime(duration) {
   if (!duration) return null;
 
   const minutes = parseInt((duration / (1000 * 60)) % 60, 10);

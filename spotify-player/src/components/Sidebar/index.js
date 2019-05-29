@@ -27,7 +27,8 @@ class Sidebar extends Component {
   };
 
   componentDidMount() {
-    this.props.getPlaylistsRequest();
+    const { getPlaylistsRequest } = this.props;
+    getPlaylistsRequest();
   }
 
   render() {
