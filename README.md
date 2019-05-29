@@ -38,6 +38,12 @@ Inside each project, run the follow command to execute all tests:
 $ yarn test
 ```
 
+To run tests with coverage:
+
+```sh
+$ yarn test --coverage
+```
+
 ## Layout Demo
 
 <p align="center">
