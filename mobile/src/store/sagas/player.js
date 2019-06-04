@@ -36,3 +36,27 @@ export function* play() {
 export function* pause() {
   yield call(TrackPlayer.pause);
 }
+
+export function* next() {
+  const player = yield select(state => state.player);
+  const currentIndex = player.podcast.tracks.findIndex(episode => episode.id === player.current);
+  const nextEpisode = player.podcast.tracks[currentIndex + 1];
+
+  if (nextEpisode) {
+    yield call(TrackPlayer.skipToNext);
+    yield put(PlayerActions.play());
+    yield put(PlayerActions.setCurrent(nextEpisode.id));
+  }
+}
+
+export function* prev() {
+  const player = yield select(state => state.player);
+  const currentIndex = player.podcast.tracks.findIndex(episode => episode.id === player.current);
+  const previewEpisode = player.podcast.tracks[currentIndex - 1];
+
+  if (previewEpisode) {
+    yield call(TrackPlayer.skipToPrevious);
+    yield put(PlayerActions.play());
+    yield put(PlayerActions.setCurrent(previewEpisode.id));
+  }
+}
