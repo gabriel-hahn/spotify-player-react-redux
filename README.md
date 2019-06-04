@@ -14,6 +14,8 @@ You must have a package manager installed and [json-server](https://www.npmjs.co
 
 ## Getting Started
 
+To install all dependencies (Web or Mobile): 
+
 ```sh
 $ yarn
 ```
@@ -28,6 +30,14 @@ The follow command will opens the project in your favorite browse. I recommend y
 
 ```sh
 $ yarn start
+```
+
+## Mobile
+
+To run mobile application, inside 'mobile' folder execute the follow command. Use 'run-ios' or 'run-android':
+
+```sh
+$ react-native run-ios
 ```
 
 ## Tests
@@ -46,6 +56,7 @@ $ yarn test --coverage
 
 ## Layout Demo
 
+### Web
 <p align="center">
     <img src="https://media.giphy.com/media/LMoJcA5vhUMXamMKMq/giphy.gif">
 </p>
