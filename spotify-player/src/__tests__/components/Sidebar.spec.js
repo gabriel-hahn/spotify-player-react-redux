@@ -10,8 +10,8 @@ const mockStore = createStore();
 const INITIAL_STATE = {
   playlists: {
     data: [{ id: 1, title: 'Music test' }, { id: 2, title: 'Music test 2' }],
+    loading: true,
   },
-  loading: false,
 };
 
 const store = mockStore(INITIAL_STATE);
@@ -24,6 +24,10 @@ beforeEach(() => {
       <Sidebar />
     </Provider>,
   );
+});
+
+afterEach(() => {
+  wrapper.unmount();
 });
 
 describe('Sidebar component', () => {

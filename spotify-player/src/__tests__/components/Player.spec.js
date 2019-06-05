@@ -33,6 +33,10 @@ beforeEach(() => {
   );
 });
 
+afterEach(() => {
+  wrapper.unmount();
+});
+
 describe('Player component', () => {
   describe('Smoke tests', () => {
     it('Should render the player component', () => {
@@ -44,7 +48,7 @@ describe('Player component', () => {
     });
   });
 
-  describe('Component tunctions test', () => {
+  describe('Component functions', () => {
     describe('msToTime function', () => {
       it('Should return the corret time', () => {
         expect(msToTime(250000)).toBe('4:10');

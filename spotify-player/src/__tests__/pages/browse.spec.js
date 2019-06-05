@@ -25,6 +25,10 @@ beforeEach(() => {
   );
 });
 
+afterEach(() => {
+  wrapper.unmount();
+});
+
 describe('Browse Page', () => {
   describe('Smoke tests', () => {
     it('Should render the browse page correctly', () => {

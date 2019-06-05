@@ -9,7 +9,7 @@ import { Creators as ErrorBoxActions } from '../../store/ducks/error';
 const mockStore = createStore();
 
 const INITIAL_STATE = {
-  error: { visible: true, message: null },
+  error: { visible: true, message: 'Error message' },
 };
 
 const store = mockStore(INITIAL_STATE);
@@ -23,6 +23,10 @@ beforeEach(() => {
   );
 });
 
+afterEach(() => {
+  wrapper.unmount();
+});
+
 describe('ErrorBox Component', () => {
   describe('Smoke tests', () => {
     it('Should render the error box component', () => {
@@ -34,6 +38,11 @@ describe('ErrorBox Component', () => {
     it('Should close the error message', () => {
       wrapper.find('button').simulate('click');
       expect(store.getActions()).toContainEqual(ErrorBoxActions.hideError());
+    });
+
+    it('Should show the correct message', () => {
+      const message = wrapper.find('p').text();
+      expect(message).toEqual('Error message');
     });
   });
 });
