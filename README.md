@@ -61,6 +61,11 @@ $ yarn test --coverage
     <img src="https://media.giphy.com/media/LMoJcA5vhUMXamMKMq/giphy.gif">
 </p>
 
+### Mobile
+<p align="center">
+    <img src="https://media.giphy.com/media/gH8DddpbD6h4oVSpXU/giphy.gif">
+</p>
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
