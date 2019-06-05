@@ -27,6 +27,25 @@ function* trackChanged() {
 export function* init() {
   yield call(TrackPlayer.setupPlayer);
 
+  // capabilities: iOS , notificationCapabilities: Android, compactCapabilities: Control center
+  TrackPlayer.updateOptions({
+    capabilities: [
+      TrackPlayer.CAPABILITY_PLAY,
+      TrackPlayer.CAPABILITY_PAUSE,
+      TrackPlayer.CAPABILITY_SKIP_TO_NEXT,
+      TrackPlayer.CAPABILITY_SKIP_TO_PREVIOUS,
+      TrackPlayer.CAPABILITY_STOP,
+    ],
+    notificationCapabilities: [
+      TrackPlayer.CAPABILITY_PLAY,
+      TrackPlayer.CAPABILITY_PAUSE,
+      TrackPlayer.CAPABILITY_SKIP_TO_NEXT,
+      TrackPlayer.CAPABILITY_SKIP_TO_PREVIOUS,
+      TrackPlayer.CAPABILITY_STOP,
+    ],
+    compactCapabilities: [TrackPlayer.CAPABILITY_PLAY, TrackPlayer.CAPABILITY_PAUSE],
+  });
+
   TrackPlayer.addEventListener('playback-track-changed', console.log);
   TrackPlayer.addEventListener('playback-state', console.log);
 }
@@ -81,4 +100,10 @@ export function* prev() {
     yield put(PlayerActions.play());
     yield put(PlayerActions.setCurrent(previewEpisode.id));
   }
+}
+
+export function* reset() {
+  yield call(TrackPlayer.stop);
+  yield call(TrackPlayer.reset);
+  yield put(PlayerActions.reset());
 }
