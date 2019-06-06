@@ -3,14 +3,16 @@ import { shallow } from 'enzyme';
 import { Provider } from 'react-redux';
 import createStore from 'redux-mock-store';
 
-import Sidebar from '../../components/Sidebar';
+import Player from '../../src/components/Player';
 
 const mockStore = createStore();
 
 const INITIAL_STATE = {
-  playlists: {
-    data: [{ id: 1, title: 'Music test' }, { id: 2, title: 'Music test 2' }],
-    loading: true,
+  player: {
+    podcast: {
+      tracks: [{ id: 1, artwork: 'https://s3-sa-east-1.amazonaws.com/gonative/cover1.png' }],
+    },
+    current: 1,
   },
 };
 
@@ -21,15 +23,13 @@ let wrapper;
 beforeEach(() => {
   wrapper = shallow(
     <Provider store={store}>
-      <Sidebar />
+      <Player />
     </Provider>,
   );
 });
 
-describe('Sidebar component', () => {
-  describe('Smoke tests', () => {
-    it('Should render the sidebar component', () => {
-      expect(wrapper.exists()).toBe(true);
-    });
+describe('Player component', () => {
+  it('Smoke tests', () => {
+    expect(wrapper.exists());
   });
 });
