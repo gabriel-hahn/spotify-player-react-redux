@@ -20,13 +20,13 @@ To install all dependencies (Web or Mobile):
 $ yarn
 ```
 
-To run JSON Server, you could do some configurations or execute the follow command if you installed json-server as global:
+To run JSON Server, you could do some configurations or execute the following command if you installed json-server as global:
 
 ```sh
 $ json-server server.json -p 3001 -w -d 500
 ```
 
-The follow command will opens the project in your favorite browse. I recommend you to use Google Chrome:
+The following command will opens the project in your favorite browse. I recommend you to use Google Chrome:
 
 ```sh
 $ yarn start
@@ -34,7 +34,7 @@ $ yarn start
 
 ## Mobile
 
-To run mobile application, inside 'mobile' folder execute the follow command. Use 'run-ios' or 'run-android':
+To run mobile application, inside 'mobile' folder execute the following command. Use 'run-ios' or 'run-android':
 
 ```sh
 $ react-native run-ios
@@ -42,7 +42,7 @@ $ react-native run-ios
 
 ## Tests
 
-Inside each project, run the follow command to execute all tests:
+Inside each project, run the following command to execute all tests:
 
 ```sh
 $ yarn test
