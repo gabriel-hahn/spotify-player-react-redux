@@ -2,7 +2,7 @@
     "name": "spotify-player",
     "version": "0.1.0",
     "dependencies": {
-        "axios": "^0.18.0",
+        "axios": "^0.21.1",
         "prop-types": "^15.7.2",
         "rc-slider": "^8.6.9",
         "react": "^16.8.4",
